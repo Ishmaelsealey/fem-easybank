@@ -558,8 +558,64 @@ video {
   top: 0px;
 }
 
+.-right-24 {
+  right: -6rem;
+}
+
+.-top-36 {
+  top: -9rem;
+}
+
+.-right-32 {
+  right: -8rem;
+}
+
+.-left-24 {
+  left: -6rem;
+}
+
+.-left-64 {
+  left: -16rem;
+}
+
+.-left-\[2\] {
+  left: -2;
+}
+
+.-left-\[20rem\] {
+  left: -20rem;
+}
+
+.-top-96 {
+  top: -24rem;
+}
+
+.-top-\[20rem\] {
+  top: -20rem;
+}
+
+.-left-20 {
+  left: -5rem;
+}
+
+.-left-16 {
+  left: -4rem;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.col-span-full {
+  grid-column: 1 / -1;
+}
+
+.row-span-full {
+  grid-row: 1 / -1;
 }
 
 .my-2 {
@@ -698,6 +754,10 @@ video {
   flex: 1 1 0%;
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
@@ -716,6 +776,10 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .gap-4 {
@@ -738,8 +802,33 @@ video {
   gap: 0.75rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+.self-center {
+  align-self: center;
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-clip {
+  overflow-y: clip;
+}
+
+.overflow-y-visible {
+  overflow-y: visible;
 }
 
 .rounded-full {
@@ -796,6 +885,10 @@ video {
 
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-desktopHero {
+  background-image: url('/images/bg-intro-desktop.svg');
 }
 
 .from-primaryGreen {
@@ -862,6 +955,10 @@ video {
   --tw-gradient-to: #ffffff00 var(--tw-gradient-to-position);
 }
 
+.bg-left-top {
+  background-position: left top;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -919,6 +1016,21 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.px-36 {
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
 .pb-32 {
   padding-bottom: 8rem;
 }
@@ -929,6 +1041,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .align-top {
@@ -1022,4 +1138,150 @@ video {
 .text-neutralGray {
   --tw-text-opacity: 1;
   color: hsl(0 0% 98% / var(--tw-text-opacity));
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-full {
+    grid-column: 1 / -1;
+  }
+
+  .md\:m-0 {
+    margin: 0px;
+  }
+
+  .md\:ml-14 {
+    margin-left: 3.5rem;
+  }
+
+  .md\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:h-20 {
+    height: 5rem;
+  }
+
+  .md\:h-96 {
+    height: 24rem;
+  }
+
+  .md\:h-screen {
+    height: 100vh;
+  }
+
+  .md\:h-\[\] {
+    height: ;
+  }
+
+  .md\:h-\[500px\] {
+    height: 500px;
+  }
+
+  .md\:h-\[600px\] {
+    height: 600px;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .md\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .md\:gap-3 {
+    gap: 0.75rem;
+  }
+
+  .md\:gap-y-10 {
+    row-gap: 2.5rem;
+  }
+
+  .md\:gap-x-5 {
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
+  }
+
+  .md\:gap-y-16 {
+    row-gap: 4rem;
+  }
+
+  .md\:p-0 {
+    padding: 0px;
+  }
+
+  .md\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .md\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .md\:px-36 {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
+  .md\:pb-5 {
+    padding-bottom: 1.25rem;
+  }
+
+  .md\:pb-0 {
+    padding-bottom: 0px;
+  }
+
+  .md\:text-left {
+    text-align: left;
+  }
 }
